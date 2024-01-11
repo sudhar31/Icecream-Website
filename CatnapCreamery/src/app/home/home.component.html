@@ -1,0 +1,119 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://img.icons8.com/?size=80&id=o9vN0UYot4Q8&format=png" alt="Logo">
+      Catnap Creamery
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="centered-nav"> <!-- This new div will center its children -->
+      <ul class="nav nav-underline">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Signup</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <main class="main-content" *ngIf="catnapCreamery$ | async as catnapCreamery"> 
+    <!-- <pre>
+      {{ catnapCreamery | json }} 
+    </pre> -->
+  
+    <div class="catnapBlog" *ngFor="let CatnapCreamery of catnapCreamery.items">
+    <img [src]="CatnapCreamery.fields.featureImage.fields.file.url" alt="">
+    <h2 class="Title">{{CatnapCreamery.fields.title}}</h2>
+    <p class="About">{{CatnapCreamery.fields.about}}</p>
+    <p class="Summary">{{CatnapCreamery.fields.summary}}</p>
+    <a href="#">Read More</a>
+    
+    </div>
+    
+  </main>
+</header>
+
+<footer class="container-footer">
+  <section>
+    <div>
+      <span class="text-white">Get Connected with us on Social media: </span>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank"  class="text-white me-4">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.twitter.com" target="_blank" class="text-white me-4">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.google.com" target="_blank" class="text-white me-4">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="text-white me-4">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="containerfoot text-center text-md-start mt-5">
+    <!-- Grid row -->
+    <div class="row mt-3">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <!-- Content -->
+        <h6 class="text-uppercase fw-bold text-white">Catnap Creamery</h6>
+        <hr class="mb-4 mt-0 d-inline-block mx-auto custom-hr" />
+        <p class="text-white">
+          Catnap Creamery!!! Where every scoop is a celebration, and joy is the secret ingredient that makes each moment extraordinary.
+        </p>
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold text-white">What We're Doing</h6>
+        <hr class="mb-4 mt-0 d-inline-block mx-auto custom-hr" />
+        <p>
+          <a href="#!" class="text-white">Support</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white">Careers</a>
+        </p>
+        <p>
+          <a href="#!" class="text-white">Contact</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 contact-info">
+      <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+      <p><i class="fas fa-home mr-3"></i> Catnap Creamery,10th North VSE Street, Kumbakonam, India </p>
+      <p><i class="fas fa-phone mr-3"></i> +91 9344350027</p>
+      <p><i class="fas fa-print mr-3"></i> +91 9791648613</p>
+    </div>
+  </section>
+  
+  
+
+  <div class="copyright-footer">
+    © 2024 Copyright:
+    <a href="https//baskinrobbinsindia.com/" class="text-white">CatnapCreamery.com</a>
+  </div>
+</footer>
+
+
+
+
+

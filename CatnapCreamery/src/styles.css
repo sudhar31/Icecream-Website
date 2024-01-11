@@ -1,0 +1,140 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #353535;
+}
+.navbar {
+    background-color: #353535;
+    color: #FDDCBA;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navbar-brand img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .centered-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-underline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-underline li {
+    margin-right: 15px;
+  }
+  
+  /* Add a margin to the right of the navbar-brand to provide space */
+  .navbar-brand {
+    margin-right: 20px;
+  }
+
+.main-content {
+    margin-top: 30px; /* Adjust the margin-top value as needed */
+}
+  
+.catnapBlog {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.catnapBlog img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.catnapBlog .title{
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+.catnapBlog .about{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.catnapBlog .summary{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.catnapBlog a{
+    text-decoration: none;
+    background-color: #353535;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 2px;
+    display: inline-block;
+
+}
+
+
+.container-footer {
+    color: white;
+    background-color: black;
+    padding: 20px; /* Add padding as needed */
+  }
+  
+  .social-icons a i {
+    color: #FFF3CE !important; /* Set the color to white */
+    font-size: 20px; /* Set your desired font size */
+  }
+  
+  /* Add more styles as needed for your specific design */
+  .custom-hr {
+    width: 60px;
+    background-color: #7c4dff;
+    height: 2px;
+    /* Add any additional styles for the custom horizontal rule */
+  }
+
+.copyright-footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+  
+.copyright-footer a {
+    color: white;
+}
+
+.contact-info {
+    text-align: left; /* Align text to the left */
+    font-size: 14px; /* Set your desired font size */
+    color: #007bff; /* Set your desired text color */
+  }
+  
+  .contact-info h6 {
+    font-size: 18px; /* Set your desired heading font size */
+    font-weight: bold; /* Set your desired heading font weight */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+  }
+  
+  .contact-info p {
+    margin-bottom: 5px; /* Adjust the margin as needed */
+  }
+  
+  /* Style for the icons in contact information */
+  .contact-info i {
+    margin-right: 5px; /* Adjust the margin as needed */
+  }
